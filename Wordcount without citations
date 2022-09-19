@@ -1,0 +1,14 @@
+def wcount(x):
+    lst = list(x)
+    for a in range(0, len(lst)):
+        if len(lst) <= a:
+            break
+        if lst[a] == "(":
+          while lst [a] != ")":
+              del lst[a]
+          del lst [a]
+    print('the number of characters is:',len(x))
+    print("".join(lst))
+
+
+wcount(""" """)
