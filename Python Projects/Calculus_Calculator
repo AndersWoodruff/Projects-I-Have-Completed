@@ -1,0 +1,29 @@
+from math import *
+
+
+def f(x):
+    return (sin(x))
+
+
+def integral(start,end,n):
+
+    total_range=(end-start)
+    interval = total_range/n
+    x=start
+    integral=0
+
+    for l in range (1,n+1):
+        integral+=f(x)*interval
+        x+=interval
+    
+    print ("The integral between", start, "and", end, "is", integral)
+    return integral
+
+
+def derivative(point,distance):
+    derivative=(f(point+distance)-f(point))/distance
+    print ("The derivative at", point, "is", derivative)
+    return derivative
+    
+for i in range(10):
+    derivative(i,1/1000000)
