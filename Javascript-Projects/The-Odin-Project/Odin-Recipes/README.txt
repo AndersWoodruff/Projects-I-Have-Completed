@@ -1,0 +1,1 @@
+This is a project written as an introduction to HTML/CSS/JavaScript with the Odin Project.
