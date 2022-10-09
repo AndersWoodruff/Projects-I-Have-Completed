@@ -2,7 +2,7 @@ from math import *
 
 
 def f(x):
-    return (sin(x))
+    return (cos(2*x)**2-cos(2*x)**4)
 
 
 def integral(start,end,n):
@@ -24,6 +24,3 @@ def derivative(point,distance):
     derivative=(f(point+distance)-f(point))/distance
     print ("The derivative at", point, "is", derivative)
     return derivative
-    
-for i in range(10):
-    derivative(i,1/1000000)
